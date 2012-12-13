@@ -98,7 +98,7 @@ sub new {
 	} );
 	$self->{h}->on_error(sub {
 		$this or return;
-		$this->destroy("@_");
+		$this->finish();
 	} );
 	$self;
 }
